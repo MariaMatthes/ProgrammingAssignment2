@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## The function makeCacheMatrix is used to created a matrix that has the abbility to save his inverse.
+## When created this kind of matrix by this function you can use the following functions:
+## set:        defines the matrix
+## get:        returns the matrix
+## setinverse: saves the input as inverse matrix
+## getinverse: returns the inverse that is saved
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -19,7 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
         
 
 
-## Write a short comment describing this function
+## This function can be used to get the inverse of a matrix created by the 'makeCacheMatrix'.
+## When the matrix has already a cached inverse it will show this inversed matrix.
+## If it doesn't has an casched inversed matrix it will calculate the inverse matrix, show this and safe it to the cache as well.
 
 cacheSolve <- function(x, ...) {
   tr <- x$getinverse()
